@@ -1,5 +1,9 @@
 local plugins = {
   {
+    "christoomey/vim-tmux-navigator",
+    lazy = false,
+  },
+  {
     "rcarriga/nvim-dap-ui",
     dependencies = "mfussenegger/nvim-dap",
     config = function()
@@ -48,12 +52,19 @@ local plugins = {
     opts = {
       ensure_installed = {
         "black",
+        "biome",
         "debugpy",
         "mypy",
         "ruff",
         "pyright",
         "clangd",
-        "clang-format"
+        "clang-format",
+        "ast-grep",
+        "prettier",
+        "prettierd",
+        "htmlbeautifier",
+        "html-lsp",
+        "tailwindcss-language-server",
       },
     },
   },
